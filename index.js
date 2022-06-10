@@ -49,3 +49,9 @@ sitebtn.onclick = function(){
 gitbtn.onclick = function(){
   window.location.href = "https://github.com/AudunTA/PlantSpire_p";
 } 
+
+const arrowUp = document.querySelector("#arrow-icon");
+
+arrowUp.onclick = function() {
+  window.scrollTo(0,0);
+}
