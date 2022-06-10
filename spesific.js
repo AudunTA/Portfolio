@@ -36,9 +36,11 @@ const spesObj = [{
   const ghlink = document.querySelector("#git-link");
   const imgspan = document.querySelector("#image-spes");
   const livespan = document.querySelector("#live");
+  const title = document.querySelector("#title");
 
 for(let i=0; i < spesObj.length; i++) {
     if(spesObj[i].post === id) {
+      title.innerHTML = `${spesObj[i].title}`
         description.innerHTML = `${spesObj[i].desc}`;
         ghlink.innerHTML= `${spesObj[i].ghlink}`;
         imgspan.innerHTML = `${spesObj[i].imgsrc}`

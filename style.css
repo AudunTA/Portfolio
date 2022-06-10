@@ -7,6 +7,16 @@ body {
     
 
 }
+:root {
+    --color-red: #ec1840;
+    --color-purple: #7a18ec;
+    --color-white: #fff;
+    --color-black-1: #111;
+    --color-black-2: #222;
+    --color-black-3: #444;
+    --speed-normal: 0.5s;
+    --speed-fast: 0.8s;
+  }
 html {
     scroll-behavior: smooth;
   }
@@ -29,9 +39,9 @@ html {
     cursor: pointer;
 }
 #home-icon {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
     cursor: pointer;
 }
 #my-name {
@@ -51,9 +61,7 @@ html {
     min-height: 100vh;
 }
 
-a:hover {
-    color: red;
-}
+
 .about-section {
     width: 100%;
     background-color: #7689D8;
@@ -69,6 +77,7 @@ a:hover {
 
 
 }
+
 .div-flex p {
     margin-top: 200px;
     margin-left: 40px;
@@ -128,7 +137,7 @@ a:hover {
     cursor: pointer;
 }
 .project-container {
- width: 500px;
+
  display: flex;
  flex-direction: row;
 }
@@ -171,6 +180,9 @@ a:hover {
 
 
 }
+.div-clm  a{
+    text-decoration: none;
+}
 
 .icons{
     display: flex;
@@ -207,16 +219,49 @@ footer {
     text-align: center;
 }
 button  {
-    width: 100px;
-    height: 40px;
-    background-color: yellow;
-    border: none;
+    position: relative;
+    width: 180px;
+    height: 60px;
+    margin: 20px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    transition: var(--speed-normal);
+    border: 1px solid var(--color-red);
     cursor: pointer;
-    color: #4A59ED;
+    background-color: transparent;
+    
 
 
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:hover {
+    border: 1px solid transparent;
+    background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png); 
+    
+    transition-delay: 0.0s;
+    background-size: 180px;
+    color: white;
+    animation: animate var(--speed-fast) steps(10) forwards;
+    
+  }
+button:last-of-type {
+    border: 1px solid var(--color-purple);
+}
 
 
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
 }
 #ln-icon {
     width: 30px;
@@ -234,7 +279,7 @@ button  {
 
 }
 .btn-flex {
-
+ margin-left: 50px;
 }
 
 /*modal */
@@ -347,7 +392,8 @@ button  {
         margin: auto;
     }
     .btn-flex {
-        padding: 20px;
+        padding: 10px;
+        max-width: 100%;
     }
 
 }
@@ -503,6 +549,9 @@ button  {
     color: blue;
     width: 400px;
 }
+#title {
+    margin-left: 20px;
+}
 .spesific-section p {
     margin-left: 20px;
     color: black;
@@ -523,10 +572,22 @@ button  {
      height: 340px;
      border: solid black 0.5px;
  }
-
+ .left-section p {
+    margin: 30px;
+ }
+ @media only screen and (max-width: 1250px) { 
+        .btn-flex {
+        margin: 10px;
+       }
+ }
+ 
  @media only screen and (max-width: 600px) {
+
      .info-f {
          max-width: 80%;
+     }
+     .left-section p {
+        margin-top: 0px;
      }
      .spesific-section {
          flex-direction: column;
@@ -556,6 +617,8 @@ button  {
     #profile-icon {
         text-align: center;
         margin: auto;
+        max-width: 80%;
+        max-height: 350px;
     }
     .info-spesific p {
         max-width: 100%;
@@ -595,8 +658,14 @@ button  {
     .icons {
         margin-left: 10%;
     }
+    #title {
+        margin-left: 0px;
+    }
     .div-clm a {
         margin-top: 0px;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
 
     }
     .div-clm h2 {
@@ -612,3 +681,19 @@ button  {
      }
  }
  
+ .projects-section h2 {
+    text-align: center;
+    
+    
+    }
+    .info-f {
+        padding-top: 50px;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        
+        }
+        .project-container {
+            text-align: center;
+            justify-content: center;
+        }

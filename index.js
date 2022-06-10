@@ -34,3 +34,18 @@ two.onclick = function() {
 three.onclick = function() {
   window.location.href = "spesific.html?post=rainydays";
 }
+
+
+
+
+const sitebtn = document.querySelector("#site-button");
+
+const gitbtn = document.querySelector("#github-button");
+
+sitebtn.onclick = function(){
+  window.location.href = "https://unrivaled-mooncake-14dedc.netlify.app/contact.html";
+} 
+
+gitbtn.onclick = function(){
+  window.location.href = "https://github.com/AudunTA/PlantSpire_p";
+} 
