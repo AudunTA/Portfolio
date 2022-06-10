@@ -1,1 +1,0 @@
-For this project I would like to redo most of the design, its one of my earliest projects. also I would like to include some javascript in the future.

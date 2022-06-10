@@ -1,37 +1,9 @@
-const modal = document.getElementById("myModal");
-const modalImg = document.getElementById("img-modal");
-const img = document.getElementsByClassName("modalImage");
-
-for(let i = 0; i < img.length; i++) {
-        img[i].addEventListener("click", function() {
-             modal.classList.toggle("displayClass");
-     modalImg.src = this.src
-    });
-}
-    
-
-  
-  
-
-   //this is probably not the best way to only close the modal if anything but the image is clicked, if the background is pressed the classlist will be more than 2 so i made this function to check if image is pressed.
-  modal.addEventListener("click", function(e) {
-    if( (e.target.classList.length) > 1) {
-      modal.classList.remove("displayClass");
-    };
-    
-  });
 
 
-const one = document.querySelector(".one");
-const two = document.querySelector(".two");
-const three = document.querySelector(".three");
 
-one.onclick = function() {
-  window.location.href = "ismk.html";
-}
-two.onclick = function() {
-  window.location.href = "plantSpire.html";
-}
-three.onclick = function() {
-  window.location.href = "rainy-days.html";
+
+const arrowUp = document.querySelector("#arrow-icon");
+
+arrowUp.onclick = function() {
+  window.scrollTo(0,0);
 }
