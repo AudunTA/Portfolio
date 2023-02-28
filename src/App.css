@@ -1,19 +1,41 @@
 :root {
-  --darkblue: #0a192f;
-  --darkest-blue: #020c1b;
-  --slate: #8892b0;
-  --light-slate: #ccd6f6;
+  --darkblue: #112240;
+  --background-color: #161b22;
+  --slate: #64ffda;
+  --slight-slate: #233554;
   --bright-green: #64ffda;
-  --almost-white: #ccd6f6;
+  --almost-white: #fff;
+  --border-color: #30363d;
+  --transparent-white: rgba(255, 255, 255, 0.07);
 }
 
 @font-face {
   font-family: SFpro;
   src: url(./assets/fonts/SFPRODISPLAYREGULAR.OTF);
+  font-weight: 400;
 }
-
+@font-face {
+  font-family: SFpro;
+  src: url(./assets/fonts/SFPRODISPLAYBOLD.OTF);
+  font-weight: 800;
+}
+/* @font-face {
+  font-family: SFpro;
+  src: url(./assets/fonts/SFMonoRegular.otf);
+} */
 body {
   padding: 0;
   margin: 0;
   font-family: SFpro;
+}
+/* p {
+  font-family: "SF Mono", monospace;
+} */
+h1 {
+  font-family: "SFPro", sans-serif;
+  font-weight: 800; /* Bold */
+}
+h2 {
+  font-family: "SFPro", sans-serif;
+  font-weight: 400; /* Regular */
 }

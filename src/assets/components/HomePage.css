@@ -1,26 +1,32 @@
+@font-face {
+  font-family: SFpro;
+  src: url(./assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
 .wrapper-homepage {
   height: 100vh;
-  background-color: #0a192f;
+  background-color: var(--background-color);
 }
 .container-homePage {
   display: flex;
-  justify-content: space-between;
+
   height: 100%;
   align-items: center;
+  justify-content: center;
 }
 .hello {
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
   margin: 0px 0 10px;
-  color: var(--bright-green);
+  color: var(--slate);
 }
 .name {
   font-size: 32px;
   line-height: 62px;
   font-weight: 700;
   margin: 0px 0 10px;
-  color: var(--light-slate);
+  color: var(--almost-white);
 }
 .front-end {
   font-size: 51px;
@@ -35,19 +41,19 @@
   font-weight: 400;
   margin: 0px 0 10px;
   max-width: 400px;
-  color: var(--slate);
+  color: var(--almost-white);
 }
 
-.homepage-middle-section {
-  margin-left: 200px;
-}
 .homepage-middle-section button {
+  font-family: SFpro;
+  font-weight: 400;
   width: 150px;
   height: 50px;
-  background-color: var(--darkblue);
-  border: 1px solid var(--bright-green);
+  background-color: #21262d;
+  border: 1px solid var(--darkblue);
   border-radius: 6px;
-  color: var(--light-slate);
+  border: 1px solid var(--border-color);
+  color: var(--almost-white);
   cursor: pointer;
 }
 .btn_getInTouch {
@@ -57,4 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.homepage-right-section {
+  margin-left: 100px;
 }

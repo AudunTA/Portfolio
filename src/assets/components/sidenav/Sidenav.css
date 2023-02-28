@@ -1,13 +1,10 @@
 .container-nav-right {
-  position: fixed;
   display: flex;
-  height: 100vh;
+
   justify-content: center;
   right: 0;
 }
-.icon-container {
-  margin: 15px;
-}
+
 .container-nav-left {
   position: fixed;
   display: flex;
@@ -24,9 +21,10 @@
   display: flex;
   align-items: center;
   transition: 0.3s;
-  margin: 20px 0;
+  margin: 20px 0px;
   border-radius: 50%;
-  background: var(--darkest-blue);
+
+  background: var(--darkblue);
 }
 .sidenav-icon {
   left: 0;
@@ -34,10 +32,11 @@
   margin: 0 auto;
   display: block;
   text-align: center;
+  z-index: 2;
   top: 15px;
   color: var(--almost-white);
   font-size: 19px;
-  background-color: var(--darkest-blue);
+  background-color: var(--darkblue);
   background: transparent;
   position: absolute;
   pointer-events: none;
@@ -50,8 +49,8 @@
   cursor: pointer;
 }
 .icon-box h2 {
-  background-color: var(--bright-green);
-  z-index: -2;
+  background-color: var(--slate);
+  z-index: 1;
   position: absolute;
   top: -12px;
   right: 0;
@@ -67,14 +66,15 @@
   font-size: 15px;
 }
 .icon-box:hover h2 {
+  color: var(--almost-white);
   transition: 0.3;
   opacity: 1;
   padding: 0 45px 0 30px;
   margin-right: 8px;
 }
 .icon-box:hover {
-  background-color: var(--bright-green);
+  background-color: var(--slate);
 }
 .icon-box:hover .sidenav-icon {
-  color: var(--darkest-blue);
+  color: var(--darkblue);
 }
