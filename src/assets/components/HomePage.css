@@ -1,0 +1,51 @@
+.wrapper-homepage {
+  height: 100vh;
+  background-color: #0a192f;
+}
+.container-homePage {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.hello {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0px 0 10px;
+  color: var(--bright-green);
+}
+.name {
+  font-size: 32px;
+  line-height: 62px;
+  font-weight: 700;
+  margin: 0px 0 10px;
+  color: var(--light-slate);
+}
+.front-end {
+  font-size: 51px;
+  line-height: 62px;
+  font-weight: 700;
+  margin: 0px 0 10px;
+  color: var(--slate);
+}
+.short-description {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0px 0 10px;
+  max-width: 400px;
+  color: var(--slate);
+}
+
+.homepage-middle-section button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--darkblue);
+  border: 1px solid var(--bright-green);
+  border-radius: 6px;
+  color: var(--bright-green);
+}
+.btn_getInTouch {
+  margin-left: 35px;
+}
