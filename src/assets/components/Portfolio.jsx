@@ -1,8 +1,15 @@
 import React from "react";
 import "./Portfolio.css";
+import { useState } from "react";
 import Tags from "./Tags";
 function Portfolio(props) {
+  let allProjects = props.allProjects;
   let project = props.currentProject;
+  let setProject = props.setProject;
+  let count = 0;
+  let additionalCount = 0;
+  let btn_class = "btn_portfolio";
+  const [additionalImg, setAdditionalImg] = useState([]);
   return (
     <div className="container-portfolio">
       <div className="header-container">
@@ -16,32 +23,29 @@ function Portfolio(props) {
         </div>
         <div className="container-under-content">
           <div className="container-portfolio-nav">
-            <div className="btn_portfolio btn_active">
-              <div className="btn_content">
-                <p>01. ReactoTech</p>
-              </div>
-            </div>
+            {allProjects.map((ele) => {
+              {
+                count++;
+              }
 
-            <div className="btn_portfolio">
-              <div className="btn_content">
-                <p>02. Adventure Trails Hike</p>
-              </div>
-            </div>
-            <div className="btn_portfolio">
-              <div className="btn_content">
-                <p>03. AuctionHouse</p>
-              </div>
-            </div>
-            <div className="btn_portfolio">
-              <div className="btn_content">
-                <p>04. PlantSpire</p>
-              </div>
-            </div>
-            <div className="btn_portfolio">
-              <div className="btn_content">
-                <p>05. FrontFace</p>
-              </div>
-            </div>
+              return (
+                <div
+                  onClick={() => setProject(ele)}
+                  className={
+                    ele.title === project.title
+                      ? "btn_portfolio btn_active"
+                      : "btn_portfolio"
+                  }
+                >
+                  <div className="btn_content">
+                    <p>
+                      0{count} {ele.title}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+
             <div className="btn_portfolio">
               <div className="btn_content">
                 <p>06. Adventure Hike (Old)</p>
@@ -55,6 +59,16 @@ function Portfolio(props) {
               <p className="triangle-icon">▹</p>
               <p className="portfolio-description">{project.description}</p>
             </div>
+            {project.achivements ? (
+              <div className="flex-portfolio">
+                <p className="triangle-icon">▹</p>{" "}
+                <p className="portfolio-description">
+                  Achivements: {project.achivements}
+                </p>{" "}
+              </div>
+            ) : (
+              ""
+            )}
             <div className="flex-portfolio">
               <p className="triangle-icon">▹</p>
               {project.tags.map((ele) => {
@@ -63,6 +77,19 @@ function Portfolio(props) {
             </div>
           </div>
         </div>
+      </div>
+      <div className="image-container">
+        {project.images ? (
+          <>
+            <div className="border-box-bottom-left"></div>
+            <div className="border-box-top-right"></div>
+            {project.images.map((ele) => {
+              return <img src={ele.src} className="portfolio-img"></img>;
+            })}
+          </>
+        ) : (
+          "fail"
+        )}
       </div>
     </div>
   );
