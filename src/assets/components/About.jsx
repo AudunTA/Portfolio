@@ -10,6 +10,13 @@ function About() {
             <h2>About me</h2>
             <div className="border-div-about-right"></div>
           </div>
+          <div className="skills-section">
+            <div className="about-header">
+              <div className="btn_content-about">
+                <p>01. Skills</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

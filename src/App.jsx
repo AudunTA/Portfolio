@@ -5,6 +5,7 @@ import About from "./assets/components/About";
 import Sidenav from "./assets/components/sidenav/Sidenav";
 import Portfolio from "./assets/components/Portfolio";
 import { useEffect } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 function App() {
   const [allProjects, setAllProjects] = useState([
     {
@@ -15,7 +16,7 @@ function App() {
       tags: ["React", "JavaScript"],
       images: [
         {
-          src: "src/assets/images/reactoTech.png",
+          src: "src/assets/images/darkmode.png",
           alt: "homepage: lightmode",
         },
       ],

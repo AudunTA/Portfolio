@@ -29,12 +29,12 @@
 }
 .border-div {
   margin-left: 20px;
-  border-bottom: 1px solid var(--slight-slate);
+  border-bottom: 2px solid var(--slight-slate);
   flex: 1;
   height: 0px;
 }
 .border-div-top {
-  border-bottom: 1px solid var(--slight-slate);
+  border-bottom: 2px solid var(--slight-slate);
   width: 50px;
   margin-right: 20px;
   height: 0px;
