@@ -1,6 +1,8 @@
 import React from "react";
 import "./Portfolio.css";
-function Portfolio() {
+import Tags from "./Tags";
+function Portfolio(props) {
+  let project = props.currentProject;
   return (
     <div className="container-portfolio">
       <div className="header-container">
@@ -9,7 +11,7 @@ function Portfolio() {
       <div className="container-portfolio-work">
         <div className="top-bar">
           <p>01.</p>
-          <h2>ReactoTech</h2>
+          <h2>MY PROJECTS</h2>
           <div className="border-div"></div>
         </div>
         <div className="container-under-content">
@@ -44,6 +46,20 @@ function Portfolio() {
               <div className="btn_content">
                 <p>06. Adventure Hike (Old)</p>
               </div>
+            </div>
+          </div>
+          <div className="portfolio-description-container">
+            <h2 className="portfolio-title">{project.title}</h2>
+            <p className="date">{project.date}</p>
+            <div className="flex-portfolio">
+              <p className="triangle-icon">▹</p>
+              <p className="portfolio-description">{project.description}</p>
+            </div>
+            <div className="flex-portfolio">
+              <p className="triangle-icon">▹</p>
+              {project.tags.map((ele) => {
+                return <p className="portfolio-tags">{ele}</p>;
+              })}
             </div>
           </div>
         </div>

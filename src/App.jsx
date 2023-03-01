@@ -6,6 +6,13 @@ import Sidenav from "./assets/components/sidenav/Sidenav";
 import Portfolio from "./assets/components/Portfolio";
 
 function App() {
+  const [focusedProject, setFocusedProject] = useState({
+    title: "ReactoTech",
+    date: "Feb 2023",
+    description:
+      "ReactoTech is an ecommerce store, that i built in react to strenghten my react skills. The application is connected to an API, and the user is able to sort, search, view product information, reviews and add to cart. Full description is under the github repository",
+    tags: ["React", "JavaScript"],
+  });
   const about = useRef();
   const home = useRef();
   const portfolio = useRef();
@@ -37,7 +44,7 @@ function App() {
         <About />
       </div>
       <div ref={portfolio} className="portfolio-page">
-        <Portfolio />
+        <Portfolio currentProject={focusedProject} />
       </div>
     </div>
   );
