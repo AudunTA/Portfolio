@@ -26,6 +26,12 @@ function App() {
       description:
         "This is Adventure Trails Hike, here i focues on writing better and clean HTML and CSS, and making components easy to globally change on all pages. slight use of JavaScript for the navigation",
       tags: ["HTML", "CSS", "JavaScript"],
+      images: [
+        {
+          src: "src/assets/images/Adventure-Trails-Hike.png",
+          alt: "homepage: lightmode",
+        },
+      ],
     },
     {
       title: "AuctionHouse",
@@ -34,6 +40,12 @@ function App() {
         "AuctionHouse is my semesterproject for the 3rd semester at Noroff. This is an Auction website that has alot of interactive functionallity using APIs. (including posting, listing, user authentication etc)",
       achivements: "Graded B",
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
+      images: [
+        {
+          src: "src/assets/images/auctionHouse.png",
+          alt: "homepage: lightmode",
+        },
+      ],
     },
     {
       title: "FrontFace",

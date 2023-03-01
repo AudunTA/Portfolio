@@ -1,4 +1,16 @@
 .container-About {
   height: 100vh;
-  background-color: lightseagreen;
+  background-color: var(--background-color);
+}
+.border-div-left {
+  margin-right: 20px;
+  border-bottom: 1px solid var(--slight-slate);
+  flex: 1;
+  height: 0px;
+}
+.border-div-about-right {
+  border-bottom: 1px solid var(--slight-slate);
+  width: 50px;
+  margin-left: 20px;
+  height: 0px;
 }

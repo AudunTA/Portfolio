@@ -12,13 +12,10 @@ function Portfolio(props) {
   const [additionalImg, setAdditionalImg] = useState([]);
   return (
     <div className="container-portfolio">
-      <div className="header-container">
-        <h1>My Projects</h1>
-      </div>
       <div className="container-portfolio-work">
         <div className="top-bar">
-          <p>01.</p>
-          <h2>MY PROJECTS</h2>
+          <div className="border-div-top"></div>
+          <h2>My projects</h2>
           <div className="border-div"></div>
         </div>
         <div className="container-under-content">
