@@ -32,10 +32,10 @@
 }
 
 .skills-section {
-  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  position: relative;
   max-width: 500px;
 }
 .border-text {
@@ -54,7 +54,7 @@
 .about-header {
   width: 190px;
   height: 42px;
-  border-bottom: 2px solid var(--slate);
+  border-top: 2px solid var(--slate);
   display: flex;
   align-items: center;
   transition: 0.1s;
@@ -69,4 +69,23 @@
   font-size: 13px;
   margin-left: 8px;
   color: var(--slate);
+}
+
+.icons-container {
+  margin: auto;
+}
+.icon-brands {
+  color: var(--slate);
+  font-size: 50px;
+  margin: 15px;
+}
+
+.border-box-bottom-left-skills {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-top: 2px solid var(--slate);
+  border-right: 2px solid var(--slate);
 }

@@ -1,5 +1,5 @@
 .container-portfolio {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: var(--background-color);
 }
@@ -9,7 +9,8 @@
   text-align: center;
   text-transform: uppercase;
 }
-.container-portfolio {
+.portfolio-page {
+  margin: 20px;
 }
 .container-portfolio-work {
   max-width: 950px;
@@ -144,4 +145,26 @@
   height: 100px;
   border-top: 2px solid var(--slate);
   border-right: 2px solid var(--slate);
+}
+
+@media only screen and (max-width: 700px) {
+  .container-under-content {
+    flex-direction: column;
+  }
+  .container-portfolio-nav {
+    flex-direction: row;
+  }
+  .btn_portfolio {
+    border: 0;
+    border-bottom: 2px solid var(--slight-slate);
+  }
+  .btn_active {
+    border-bottom: 2px solid var(--slate);
+  }
+  .btn_portfolio:hover {
+    background-color: var(--slight-slate);
+    border: 0;
+    border-bottom: 2px solid var(--slate);
+    cursor: pointer;
+  }
 }
