@@ -1,6 +1,9 @@
 .container-portfolio {
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--background-color);
 }
 .header-container h1 {
@@ -13,7 +16,7 @@
   margin: 20px;
 }
 .container-portfolio-work {
-  max-width: 950px;
+  max-width: 800px;
   margin: auto;
 }
 .top-bar {
@@ -116,7 +119,7 @@
 
 /* image style */
 .image-container {
-  max-width: 950px;
+  max-width: 800px;
   margin: auto;
   display: flex;
   position: relative;
@@ -166,5 +169,8 @@
     border: 0;
     border-bottom: 2px solid var(--slate);
     cursor: pointer;
+  }
+  .container-portfolio-work {
+    width: 100%;
   }
 }
