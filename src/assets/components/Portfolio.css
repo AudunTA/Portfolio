@@ -16,8 +16,10 @@
   margin: 20px;
 }
 .container-portfolio-work {
-  max-width: 800px;
-  margin: auto;
+  width: 800px;
+}
+.wrapper-margin {
+  margin: 8px;
 }
 .top-bar {
   display: flex;
@@ -156,9 +158,15 @@
   }
   .container-portfolio-nav {
     flex-direction: row;
+    margin: 15px auto;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto !important;
   }
   .btn_portfolio {
     border: 0;
+    width: 250px;
     border-bottom: 2px solid var(--slight-slate);
   }
   .btn_active {
@@ -170,6 +178,8 @@
     border-bottom: 2px solid var(--slate);
     cursor: pointer;
   }
+}
+@media only screen and (max-width: 810px) {
   .container-portfolio-work {
     width: 100%;
   }

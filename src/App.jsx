@@ -4,6 +4,7 @@ import HomePage from "./assets/components/HomePage";
 import About from "./assets/components/About";
 import Sidenav from "./assets/components/sidenav/Sidenav";
 import Portfolio from "./assets/components/Portfolio";
+import Contact from "./assets/components/contact/Contact";
 import { useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Header from "./assets/components/header/Header";
@@ -17,8 +18,8 @@ function App() {
       tags: ["React", "JavaScript"],
       images: [
         {
-          src: "src/assets/images/darkmode.png",
-          alt: "homepage: lightmode",
+          src: "src/assets/images/reactoTech.png",
+          alt: "homepage: mobile",
         },
       ],
     },
@@ -111,6 +112,7 @@ function App() {
           allProjects={allProjects}
           setProject={clickProject}
         />
+        <Contact />
       </div>
     </div>
   );

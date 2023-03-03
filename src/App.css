@@ -24,6 +24,13 @@
   font-family: SFMono;
   src: url(./assets/fonts/SFMonoRegular.otf);
 }
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
 body {
   background-color: var(--background-color);
   padding: 0;

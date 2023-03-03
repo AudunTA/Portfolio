@@ -27,7 +27,7 @@
   cursor: pointer;
   position: relative;
   color: var(--slight-gray);
-  font-size: 20px;
+  font-size: 13px;
 }
 .header-mono {
   color: var(--slate);

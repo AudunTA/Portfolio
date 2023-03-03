@@ -1,0 +1,179 @@
+.wrapper-contact {
+  max-width: 800px;
+  margin: auto;
+}
+.container-contact {
+  border-radius: 8px;
+
+  margin: 7px;
+  background-color: var(--full-white);
+  display: flex;
+  flex-direction: column;
+}
+.flex-div-contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.border-div-flex {
+  margin-right: 20px;
+  border-bottom: 2px solid var(--slight-slate);
+  flex: 1;
+  height: 0px;
+}
+.container-left-contact {
+  background-color: var(--btn-addCart);
+  margin: 7px;
+  border-radius: 8px;
+}
+.container-left-contact p {
+  color: var(--main-text-color);
+  font-size: 0.7em;
+  max-width: 500px;
+}
+.container-left-contact h2 {
+  font-size: 1.2em;
+  color: var(--main-text-color);
+}
+.margin-left {
+  margin: 7px;
+}
+.container-right-contact {
+  flex: 1;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.contact-form-icon {
+  margin-right: 7px;
+  color: var(--main-text-color);
+}
+.wrapper-contact-icon {
+  display: flex;
+  align-items: center;
+}
+.contact-navigation {
+  display: flex;
+}
+.back-icon {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-color: var(--btn-addCart);
+  color: var(--almost-white);
+  border: 1px solid var(--border-color);
+  border-radius: 66.7%;
+}
+.top-form {
+  margin-top: 7px;
+
+  justify-content: center;
+}
+.top-form input {
+  flex: 1;
+  margin: 7px;
+}
+
+.error-firstname,
+.error-lastname,
+.error-bodytext,
+.error-email {
+  width: 100%;
+  margin: 0px 7px;
+  color: brown;
+}
+
+.middle-form {
+  display: flex;
+  flex-direction: column;
+}
+.middle-form input,
+textarea {
+  margin: 7px;
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none; /*remove the resize handle on the bottom right*/
+}
+.contact-form input {
+  outline: 0;
+  border-width: 0 0 2px;
+}
+.contact-form label {
+  font-family: SFpro;
+  padding: 7px;
+  font-size: 13px;
+  color: var(--slate);
+  font-family: SFMono;
+}
+.bottom-form {
+  margin: 7px;
+}
+.contact-form input,
+textarea {
+  font-family: SFpro;
+  font-size: 13px;
+
+  border: none;
+  border-bottom: 2px solid var(--slight-gray);
+  outline: none;
+  background-color: var(--full-white);
+}
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid var(--slight-gray);
+
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+.contact-form input:focus,
+textarea:focus {
+  border-bottom: 2px solid var(--slate);
+}
+.contact-form button {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  background: var(--btn-addCart);
+  border: 1px solid var(--slate);
+
+  color: var(--almost-white);
+}
+.top-bar-contact {
+  max-width: 800px;
+  margin: auto;
+}
+.wrapper-contact {
+  margin-bottom: 300px;
+}
+@media screen and (min-width: 700px) {
+  .container-contact {
+    flex-direction: row;
+  }
+  .top-form {
+    display: flex;
+  }
+  .container-contact {
+    height: 400px;
+  }
+  .container-left-contact p {
+    font-size: 1em;
+  }
+  .container-left-contact h2 {
+    font-size: 1.5em;
+  }
+  .contact-form {
+    width: 500px;
+    margin: auto;
+  }
+}

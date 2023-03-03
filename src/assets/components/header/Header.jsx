@@ -19,6 +19,10 @@ function Header({ aboutClick, homeClick, portfolioClick }) {
             <p className="header-mono">03</p>
             projects
           </a>
+          <a onClick={portfolioClick} className="nav-item">
+            <p className="header-mono">04</p>
+            contact
+          </a>
         </div>
       </div>
     </div>
