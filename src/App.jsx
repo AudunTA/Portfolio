@@ -6,6 +6,7 @@ import Sidenav from "./assets/components/sidenav/Sidenav";
 import Portfolio from "./assets/components/Portfolio";
 import { useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import Header from "./assets/components/header/Header";
 function App() {
   const [allProjects, setAllProjects] = useState([
     {
@@ -84,6 +85,11 @@ function App() {
   };
   return (
     <div className="App">
+      <Header
+        aboutClick={aboutClick}
+        homeClick={homeClick}
+        portfolioClick={portfolioClick}
+      />
       <Sidenav
         aboutClick={aboutClick}
         homeClick={homeClick}

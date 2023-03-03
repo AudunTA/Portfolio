@@ -12,15 +12,15 @@ function HomePage(props) {
     <div className="wrapper-homepage">
       <div className="container-homePage">
         <div className="homepage-middle-section">
+          <div className="top-bar">
+            <div className="border-div-about-right"></div>
+            <h2>Welcome</h2>
+            <div className="border-div-left"></div>
+          </div>
           <p className="hello">Hi, my name is</p>
           <h2 className="name">Audun Thompson Anderssen</h2>
           <h2 className="front-end">Im a Front End Developer</h2>
-          <p className="short-description">
-            Im currently a front-end student at Noroff, Kristiansand. I also got
-            a bachelor in It og Informasjonssystemer at USN Ringeriket.
-          </p>
-          <button>SEE MY WORK</button>
-          <button className="btn_getInTouch">GET IN TOUCH</button>
+          <p className="short-description"></p>
         </div>
         <div className="homepage-right-section">
           <div className="wrapper-sidenav">
