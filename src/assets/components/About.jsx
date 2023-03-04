@@ -17,13 +17,22 @@ function About() {
       <div className="wrapper-container">
         <div className="container-portfolio-work">
           <div className="margin-wrapper">
-            <div className="top-bar">
+            <div
+              className="top-bar"
+              data-aos="fade-right"
+              data-aos-duration="300"
+              data-aos-offset="100"
+            >
               <div className="border-div-left"></div>
               <h2>About me</h2>
               <div className="border-div-about-right"></div>
             </div>
             <div className="information-section">
-              <div className="container-information">
+              <div
+                className="container-information"
+                data-aos="fade-left"
+                data-aos-duration="300"
+              >
                 <div className="information-header">
                   <div className="btn_content-about">
                     <p>01. information</p>
@@ -48,7 +57,12 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="skills-section">
+            <div
+              className="skills-section"
+              data-aos="fade-right"
+              data-aos-duration="300"
+              data-aos-offset="100"
+            >
               <div className="about-header">
                 <div className="btn_content-about">
                   <p>01. Skills</p>
@@ -105,7 +119,12 @@ function About() {
               </div>
               <div className="border-box-bottom-left-skills"></div>
             </div>
-            <div className="education-section">
+            <div
+              className="education-section"
+              data-aos="fade-left"
+              data-aos-duration="300"
+              data-aos-offset="100"
+            >
               <div className="container-education">
                 <div className="education-header">
                   <div className="btn_content-about">

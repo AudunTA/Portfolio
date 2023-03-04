@@ -13,7 +13,7 @@ function HomePage(props) {
       <div className="container-homePage">
         <div className="homepage-middle-section">
           <div className="top-bar">
-            <div className="border-div-about-right"></div>
+            <div className="border-div-home-right"></div>
             <h2>Welcome</h2>
             <div className="border-div-left"></div>
           </div>

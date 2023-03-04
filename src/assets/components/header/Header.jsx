@@ -1,10 +1,30 @@
 import React from "react";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis, faSquareXmark } from "@fortawesome/free-solid-svg-icons";
 function Header({ aboutClick, homeClick, portfolioClick }) {
   return (
     <div className="header">
       <div className="flex-header">
-        <p>Logo</p>
+        <div className="mobile-nav">
+          <a onClick={homeClick} className="nav-item-mobile">
+            <p className="header-mono">01</p>
+            home
+          </a>
+          <a onClick={aboutClick} className="nav-item-mobile">
+            <p className="header-mono">02</p>
+            about
+          </a>
+          <a onClick={portfolioClick} className="nav-item-mobile">
+            <p className="header-mono">03</p>
+            projects
+          </a>
+          <a onClick={portfolioClick} className="nav-item-mobile">
+            <p className="header-mono">04</p>
+            contact
+          </a>
+        </div>
+        <p className="logo-nav">Logo</p>
 
         <div className="header-nav">
           <a onClick={homeClick} className="nav-item">
@@ -23,6 +43,9 @@ function Header({ aboutClick, homeClick, portfolioClick }) {
             <p className="header-mono">04</p>
             contact
           </a>
+        </div>
+        <div className="hamburger-icon">
+          <FontAwesomeIcon className="icon-hamburger" icon={faEllipsis} />
         </div>
       </div>
     </div>

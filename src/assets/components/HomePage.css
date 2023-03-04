@@ -47,17 +47,8 @@
   color: var(--almost-white);
 }
 
-.homepage-middle-section button {
-  font-family: SFpro;
-  font-weight: 400;
-  width: 150px;
-  height: 50px;
-  background-color: #21262d;
-  border: 1px solid var(--darkblue);
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  color: var(--almost-white);
-  cursor: pointer;
+.homepage-middle-section {
+  margin: 8px;
 }
 .btn_getInTouch {
   margin-left: 35px;
@@ -69,4 +60,35 @@
 }
 .homepage-right-section {
   margin-left: 100px;
+}
+.border-div-home-right {
+  border-bottom: 2px solid var(--slight-slate);
+  width: 50px;
+  margin-right: 20px;
+  height: 0px;
+}
+@media only screen and (max-width: 800px) {
+  .homepage-right-section {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .front-end {
+    font-size: 40px;
+  }
+  .name {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .front-end {
+    font-size: 30px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .hello {
+    font-size: 13px;
+  }
 }

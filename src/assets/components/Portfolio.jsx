@@ -70,8 +70,8 @@ function Portfolio(props) {
 
             <div
               className="portfolio-description-container"
-              data-aos="fade-left"
-              data-aos-duration="300"
+              data-aos="fade"
+              data-aos-duration="500"
               data-aos-offset="0"
               key={project.title}
             >
@@ -113,13 +113,14 @@ function Portfolio(props) {
               <div
                 key={project.title + 2}
                 className="border-box-bottom-left"
-                data-aos="fade-up-right"
-                data-aos-duration="300"
+                data-aos="fade"
+                data-aos-duration="500"
+                data-aos-offset="0"
               ></div>
               <div
                 key={project.title + 1}
                 className="border-box-top-right"
-                data-aos="fade-down-left"
+                data-aos="fade"
                 data-aos-duration="300"
               ></div>
               {project.images.map((ele) => {
@@ -128,7 +129,7 @@ function Portfolio(props) {
                     key={ele.src}
                     src={ele.src}
                     className="portfolio-img"
-                    data-aos="fade-up"
+                    data-aos="fade"
                     data-aos-duration="300"
                   ></img>
                 );

@@ -66,7 +66,11 @@ function Contact() {
       <div className="container-contact">
         <div className="container-portfolio-work">
           <div className="container-right-contact">
-            <form className="contact-form">
+            <form
+              className="contact-form"
+              data-aos="fade-left"
+              data-aos-duration="300"
+            >
               <div className="wrapper-top-form">
                 <div className="top-form">
                   <div className="flex-div-contact">
