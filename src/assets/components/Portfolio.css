@@ -94,6 +94,7 @@
   font-size: 22px;
 }
 .portfolio-description-container {
+  position: relative;
   margin-left: 22px;
 }
 .portfolio-description {
@@ -142,6 +143,11 @@
   border-bottom: 2px solid var(--slate);
   border-left: 2px solid var(--slate);
 }
+.icon-project-links {
+  margin: 10px;
+  font-size: 20px;
+  color: var(--almost-white);
+}
 .border-box-top-right {
   position: absolute;
   top: 0;
@@ -151,7 +157,11 @@
   border-top: 2px solid var(--slate);
   border-right: 2px solid var(--slate);
 }
-
+.project-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 @media only screen and (max-width: 700px) {
   .container-under-content {
     flex-direction: column;

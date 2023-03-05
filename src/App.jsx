@@ -22,6 +22,8 @@ function App() {
           alt: "homepage: mobile",
         },
       ],
+      live_link: "#",
+      gitHub: "https://github.com/AudunTA/ReactoTech",
     },
     {
       title: "Adventure Trails Hike",

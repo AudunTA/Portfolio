@@ -5,7 +5,9 @@ import "animate.css/animate.min.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 function Portfolio(props) {
   let allProjects = props.allProjects;
   let project = props.currentProject;
@@ -75,6 +77,20 @@ function Portfolio(props) {
               data-aos-offset="0"
               key={project.title}
             >
+              <div className="project-links">
+                <a href={project.gitHub} target="_blank">
+                  <FontAwesomeIcon
+                    className="icon-project-links"
+                    icon={faGithubAlt}
+                  />
+                </a>
+                <a href="#" target="_blank">
+                  <FontAwesomeIcon
+                    className="icon-project-links"
+                    icon={faArrowUpRightFromSquare}
+                  />
+                </a>
+              </div>
               <h2 className="portfolio-title">{project.title}</h2>
               <p className="date">{project.date}</p>
               <div className="flex-portfolio">
