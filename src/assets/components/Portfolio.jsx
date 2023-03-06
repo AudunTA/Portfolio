@@ -84,7 +84,7 @@ function Portfolio(props) {
                     icon={faGithubAlt}
                   />
                 </a>
-                <a href="#" target="_blank">
+                <a href={project.live_link} target="_blank">
                   <FontAwesomeIcon
                     className="icon-project-links"
                     icon={faArrowUpRightFromSquare}

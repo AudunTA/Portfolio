@@ -37,6 +37,8 @@ function App() {
           alt: "homepage: lightmode",
         },
       ],
+      live_link: "https://admirable-parfait-746c8d.netlify.app",
+      gitHub: "https://github.com/AudunTA/ATH",
     },
     {
       title: "AuctionHouse",
@@ -51,6 +53,8 @@ function App() {
           alt: "homepage: lightmode",
         },
       ],
+      live_link: "#",
+      gitHub: "https://github.com/AudunTA/SemesterAssignment_Auctionhouse",
     },
     {
       title: "FrontFace",
@@ -58,14 +62,28 @@ function App() {
       description:
         "I developed FrontFace, a social media platform, in collaboration with a classmate as a course assignment in JavaScript 2. The project was completed within a tight timeframe of one week.",
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
+      images: [
+        {
+          src: "",
+        },
+      ],
+      live_link: "https://unrivaled-mooncake-14dedc.netlify.app",
+      gitHub: "https://github.com/AudunTA/SemesterAssignment_Auctionhouse",
     },
     {
       title: "PlantSpire",
       date: "May - June 2022",
       description:
-        "This was my semester 2 project at Noroff. The focus of this project was JavaScript, including listing, filter, search and posting using an API.",
+        "This was my semester 2 project at Noroff. The focus of this project was JavaScript, including listing, filter, search and posting using an API. For the API i used wordpress as a headless CMS",
       achivements: "Graded B",
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
+      images: [
+        {
+          src: "",
+        },
+      ],
+      live_link: "https://unrivaled-mooncake-14dedc.netlify.app",
+      gitHub: "https://github.com/AudunTA/SemesterAssignment_Auctionhouse",
     },
   ]);
   const [focusedProject, setFocusedProject] = useState(allProjects[0]);
@@ -73,6 +91,7 @@ function App() {
   const about = useRef();
   const home = useRef();
   const portfolio = useRef();
+  const contact = useRef();
 
   const aboutClick = () => {
     about.current.scrollIntoView({ behavior: "smooth" });
@@ -86,12 +105,16 @@ function App() {
   const clickProject = (ele) => {
     setFocusedProject(ele);
   };
+  const contactClick = () => {
+    contact.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="App">
       <Header
         aboutClick={aboutClick}
         homeClick={homeClick}
         portfolioClick={portfolioClick}
+        contactClick={contactClick}
       />
       <Sidenav
         aboutClick={aboutClick}
@@ -114,6 +137,8 @@ function App() {
           allProjects={allProjects}
           setProject={clickProject}
         />
+      </div>
+      <div ref={contact}>
         <Contact />
       </div>
     </div>

@@ -1,29 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis, faSquareXmark } from "@fortawesome/free-solid-svg-icons";
-function Header({ aboutClick, homeClick, portfolioClick }) {
+
+function Header({ aboutClick, homeClick, portfolioClick, contactClick }) {
+  const [showHamburger, setShowHamburger] = useState(false);
+
+  const handleHamburgerClick = () => {
+    setShowHamburger(!showHamburger);
+  };
   return (
     <div className="header">
       <div className="flex-header">
-        <div className="mobile-nav">
-          <a onClick={homeClick} className="nav-item-mobile">
-            <p className="header-mono">01</p>
-            home
-          </a>
-          <a onClick={aboutClick} className="nav-item-mobile">
-            <p className="header-mono">02</p>
-            about
-          </a>
-          <a onClick={portfolioClick} className="nav-item-mobile">
-            <p className="header-mono">03</p>
-            projects
-          </a>
-          <a onClick={portfolioClick} className="nav-item-mobile">
-            <p className="header-mono">04</p>
-            contact
-          </a>
-        </div>
+        {showHamburger ? (
+          <div className="mobile-nav">
+            <a onClick={homeClick} className="nav-item-mobile">
+              <p className="header-mono">01</p>
+              home
+            </a>
+            <a onClick={aboutClick} className="nav-item-mobile">
+              <p className="header-mono">02</p>
+              about
+            </a>
+            <a onClick={portfolioClick} className="nav-item-mobile">
+              <p className="header-mono">03</p>
+              projects
+            </a>
+            <a onClick={contactClick} className="nav-item-mobile">
+              <p className="header-mono">04</p>
+              contact
+            </a>
+          </div>
+        ) : (
+          ""
+        )}
         <p className="logo-nav">Logo</p>
 
         <div className="header-nav">
@@ -39,13 +49,17 @@ function Header({ aboutClick, homeClick, portfolioClick }) {
             <p className="header-mono">03</p>
             projects
           </a>
-          <a onClick={portfolioClick} className="nav-item">
+          <a onClick={contactClick} className="nav-item">
             <p className="header-mono">04</p>
             contact
           </a>
         </div>
         <div className="hamburger-icon">
-          <FontAwesomeIcon className="icon-hamburger" icon={faEllipsis} />
+          <FontAwesomeIcon
+            className="icon-hamburger"
+            onClick={handleHamburgerClick}
+            icon={faEllipsis}
+          />
         </div>
       </div>
     </div>
