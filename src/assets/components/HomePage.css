@@ -14,19 +14,30 @@
   align-items: center;
   justify-content: center;
 }
+.contact-icon {
+  color: var(--almost-white);
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid var(--slate);
+  background-color: var(--slight-slate);
+}
+.contact-icon-right {
+  margin-left: 10px;
+}
 .hello {
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
-  margin: 0px 0 10px;
+  margin: 0px 0 0px;
   color: var(--slate);
   text-shadow: 2px 2px 2px rgba(136, 146, 176, 0.24);
 }
 .name {
+  height: 40px;
   font-size: 32px;
-  line-height: 62px;
+
   font-weight: 700;
-  margin: 0px 0 10px;
+  margin: 0px 0px 0px;
   color: var(--almost-white);
   text-shadow: 2px 2px 2px rgba(136, 146, 176, 0.24);
 }
