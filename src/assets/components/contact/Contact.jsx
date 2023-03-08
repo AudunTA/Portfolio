@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -65,6 +67,13 @@ function Contact() {
       </div>
       <div className="container-contact">
         <div className="container-portfolio-work">
+          <div className="container-icon">
+            <FontAwesomeIcon
+              className="contact-icon-linkedIn"
+              icon={faLinkedinIn}
+            />
+          </div>
+
           <div className="container-right-contact">
             <form
               className="contact-form"

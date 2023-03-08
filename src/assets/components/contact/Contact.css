@@ -156,6 +156,17 @@ textarea:focus {
 .wrapper-contact {
   margin-bottom: 300px;
 }
+.container-icon {
+  display: flex;
+  justify-content: center;
+}
+.contact-icon-linkedIn {
+  color: var(--almost-white);
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid var(--slate);
+  background-color: var(--slight-slate);
+}
 @media screen and (min-width: 700px) {
   .container-contact {
     flex-direction: row;
