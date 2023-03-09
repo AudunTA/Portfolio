@@ -15,20 +15,20 @@ function Header({ aboutClick, homeClick, portfolioClick, contactClick }) {
         {showHamburger ? (
           <div className="mobile-nav">
             <a onClick={homeClick} className="nav-item-mobile">
-              <p className="header-mono">01</p>
-              home
+              <p className="header-mono">01.</p>
+              Home
             </a>
             <a onClick={aboutClick} className="nav-item-mobile">
-              <p className="header-mono">02</p>
-              about
+              <p className="header-mono">02.</p>
+              About
             </a>
             <a onClick={portfolioClick} className="nav-item-mobile">
-              <p className="header-mono">03</p>
-              projects
+              <p className="header-mono">03.</p>
+              Projects
             </a>
             <a onClick={contactClick} className="nav-item-mobile">
-              <p className="header-mono">04</p>
-              contact
+              <p className="header-mono">04.</p>
+              Contact
             </a>
           </div>
         ) : (
@@ -38,20 +38,20 @@ function Header({ aboutClick, homeClick, portfolioClick, contactClick }) {
 
         <div className="header-nav">
           <a onClick={homeClick} className="nav-item">
-            <p className="header-mono">01</p>
-            home
+            <p className="header-mono">01.</p>
+            Home
           </a>
           <a onClick={aboutClick} className="nav-item">
-            <p className="header-mono">02</p>
-            about
+            <p className="header-mono">02.</p>
+            About
           </a>
           <a onClick={portfolioClick} className="nav-item">
-            <p className="header-mono">03</p>
-            projects
+            <p className="header-mono">03.</p>
+            Projects
           </a>
           <a onClick={contactClick} className="nav-item">
-            <p className="header-mono">04</p>
-            contact
+            <p className="header-mono">04.</p>
+            Contact
           </a>
         </div>
         <div className="hamburger-icon">
