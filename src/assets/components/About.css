@@ -192,7 +192,6 @@
 .information-header:hover {
   background-color: var(--slight-slate);
   border-left: 2px solid var(--slate);
-  border-bottom: 2px solid var(--slate);
 }
 .information-text-one {
   margin-block-end: 0em;

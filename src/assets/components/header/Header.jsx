@@ -3,6 +3,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis, faSquareXmark } from "@fortawesome/free-solid-svg-icons";
 
+import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 function Header({ aboutClick, homeClick, portfolioClick, contactClick }) {
   const [showHamburger, setShowHamburger] = useState(false);
 
@@ -34,7 +35,20 @@ function Header({ aboutClick, homeClick, portfolioClick, contactClick }) {
         ) : (
           ""
         )}
-        <p className="logo-nav">Logo</p>
+        <div className="logo-nav">
+          <a
+            href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
+            target="_blank"
+          >
+            <FontAwesomeIcon className="contact-icon" icon={faLinkedinIn} />
+          </a>
+          <a href="https://github.com/AudunTA" target="_blank">
+            <FontAwesomeIcon
+              className="contact-icon contact-icon-right"
+              icon={faGithubAlt}
+            />
+          </a>
+        </div>
 
         <div className="header-nav">
           <a onClick={homeClick} className="nav-item">

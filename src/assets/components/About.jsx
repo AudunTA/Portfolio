@@ -65,7 +65,7 @@ function About() {
             >
               <div className="about-header">
                 <div className="btn_content-about">
-                  <p>01. Skills</p>
+                  <p>02. Skills</p>
                 </div>
               </div>
               <div className="icons-container">

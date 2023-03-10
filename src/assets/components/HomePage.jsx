@@ -20,18 +20,7 @@ function HomePage(props) {
           <p className="hello">Hi, my name is</p>
           <h2 className="name">Audun Thompson Anderssen</h2>
           <h2 className="front-end">Im a Front End Developer</h2>
-          <a
-            href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
-            target="_blank"
-          >
-            <FontAwesomeIcon className="contact-icon" icon={faLinkedinIn} />
-          </a>
-          <a href="https://github.com/AudunTA" target="_blank">
-            <FontAwesomeIcon
-              className="contact-icon contact-icon-right"
-              icon={faGithubAlt}
-            />
-          </a>
+
           <p className="short-description"></p>
         </div>
         <div className="homepage-right-section">

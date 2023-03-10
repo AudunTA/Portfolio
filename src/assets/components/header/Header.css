@@ -10,6 +10,8 @@
 .flex-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
   position: relative;
 
   transition: 0.3s;
@@ -79,11 +81,23 @@
 .mobile-nav {
   position: absolute;
   background-color: var(--background-color);
+  margin-top: 160px;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100vw;
-  border: 1px solid var(--slate);
+  border-bottom: 1px solid var(--slate);
   display: none;
+}
+.logo-nav {
+  align-items: center;
+}
+.contact-icon {
+  align-items: center;
+  color: var(--almost-white);
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid var(--slate);
+  background-color: var(--slight-slate);
 }
 @media only screen and (max-width: 700px) {
   .flex-header {

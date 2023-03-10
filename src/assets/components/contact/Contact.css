@@ -167,6 +167,13 @@ textarea:focus {
   border: 1px solid var(--slate);
   background-color: var(--slight-slate);
 }
+.contact-text {
+  font-family: SFMono;
+  color: var(--slight-gray);
+}
+.href-link-contact {
+  color: var(--slate);
+}
 @media screen and (min-width: 700px) {
   .container-contact {
     flex-direction: row;

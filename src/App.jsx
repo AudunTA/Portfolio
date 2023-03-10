@@ -22,7 +22,7 @@ function App() {
           alt: "homepage: mobile",
         },
       ],
-      live_link: "#",
+      live_link: "https://audunta.github.io/ReactoTech/",
       gitHub: "https://github.com/AudunTA/ReactoTech",
     },
     {
@@ -53,7 +53,7 @@ function App() {
           alt: "homepage: lightmode",
         },
       ],
-      live_link: "#",
+      live_link: "https://audunta.github.io/SemesterAssignment_Auctionhouse/",
       gitHub: "https://github.com/AudunTA/SemesterAssignment_Auctionhouse",
     },
     {

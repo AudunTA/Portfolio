@@ -67,13 +67,6 @@ function Contact() {
       </div>
       <div className="container-contact">
         <div className="container-portfolio-work">
-          <div className="container-icon">
-            <FontAwesomeIcon
-              className="contact-icon-linkedIn"
-              icon={faLinkedinIn}
-            />
-          </div>
-
           <div className="container-right-contact">
             <form
               className="contact-form"
@@ -81,6 +74,17 @@ function Contact() {
               data-aos-duration="300"
             >
               <div className="wrapper-top-form">
+                <p className="contact-text">
+                  Please send me a message on{" "}
+                  <a
+                    className="href-link-contact"
+                    href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>{" "}
+                  if you got any questions :)
+                </p>
                 <div className="top-form">
                   <div className="flex-div-contact">
                     <label for="first_name">First Name</label>
