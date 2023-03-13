@@ -101,9 +101,9 @@ function Portfolio(props) {
                 </p>
               </div>
               {project.achivements ? (
-                <div className="flex-portfolio">
-                  <p className="triangle-icon">▹</p>{" "}
-                  <p className="portfolio-description">
+                <div className="flex-portfolio-height">
+                  <p className="triangle-icon-margin-top">▹</p>{" "}
+                  <p className="portfolio-description-two">
                     Achivements: {project.achivements}
                   </p>{" "}
                 </div>
@@ -111,7 +111,7 @@ function Portfolio(props) {
                 ""
               )}
               <div className="flex-portfolio">
-                <p className="triangle-icon">▹</p>
+                <p className="triangle-icon-margin-top">▹</p>
                 {project.tags.map((ele) => {
                   return (
                     <p key={ele[0]} className="portfolio-tags">

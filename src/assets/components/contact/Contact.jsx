@@ -68,84 +68,17 @@ function Contact() {
       <div className="container-contact">
         <div className="container-portfolio-work">
           <div className="container-right-contact">
-            <form
-              className="contact-form"
-              data-aos="fade-left"
-              data-aos-duration="300"
-            >
-              <div className="wrapper-top-form">
-                <p className="contact-text">
-                  Please send me a message on{" "}
-                  <a
-                    className="href-link-contact"
-                    href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
-                    target="_blank"
-                  >
-                    LinkedIn
-                  </a>{" "}
-                  if you got any questions :)
-                </p>
-                <div className="top-form">
-                  <div className="flex-div-contact">
-                    <label for="first_name">First Name</label>
-                    <input
-                      placeholder="Ola"
-                      value={firstName}
-                      onChange={onFirstNameChange}
-                      name="first_name"
-                    ></input>
-                  </div>
-                  <div className="flex-div-contact">
-                    <label for="last_name">Last Name</label>
-                    <input
-                      type="text"
-                      placeholder="Nordmann"
-                      value={lastName}
-                      onChange={onLastNameChange}
-                      name="last_name"
-                    ></input>
-                  </div>
-                </div>
-                <div className="top-form">
-                  <div className="error-firstname">
-                    {errorFirstName ? "minimum 3 characters" : ""}
-                  </div>
-                  <div className="error-lastname">
-                    {errorLastName ? "minimum 3 characters" : ""}
-                  </div>
-                </div>
-                <div className="middle-form">
-                  <div className="flex-div-contact">
-                    <label for="email">Email</label>
-                    <input
-                      type={email}
-                      placeholder="email@example.com"
-                      value={email}
-                      name="email"
-                      onChange={onEmailChange}
-                    ></input>
-                  </div>
-
-                  <div className="error-email">
-                    {errorEmail ? "not a valid email" : ""}
-                  </div>
-                  <label for="email">Message</label>
-                  <textarea
-                    placeholder="whats the question?"
-                    value={bodyText}
-                    onChange={onBodyChange}
-                  ></textarea>
-                  <div className="error-bodytext">
-                    {errorBodyText ? "minumum 3 characters" : ""}
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-form">
-                <button type="submit" onClick={submitForm}>
-                  Send Message
-                </button>
-              </div>
-            </form>
+            <p className="contact-text">
+              Please send me a message on{" "}
+              <a
+                className="href-link-contact"
+                href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>{" "}
+              if you got any questions :)
+            </p>
           </div>
         </div>
       </div>

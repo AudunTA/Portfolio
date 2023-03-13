@@ -3,7 +3,7 @@
 
   height: 50px;
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--slate);
+
   position: fixed;
   z-index: 99;
 }

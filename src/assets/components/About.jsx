@@ -65,7 +65,7 @@ function About() {
             >
               <div className="about-header">
                 <div className="btn_content-about">
-                  <p>02. Skills</p>
+                  <p>skills</p>
                 </div>
               </div>
               <div className="icons-container">
@@ -139,8 +139,8 @@ function About() {
                   </p>
                 </div>
                 <div className="flex-education">
-                  <p className="triangle-icon">▹</p>
-                  <p className="education-text">
+                  <p className="triangle-icon-margin-top">▹</p>
+                  <p className="education-text-two">
                     Bachelor Degree IT og Informasjonsystemer at USN, Ringeriket
                   </p>
                 </div>

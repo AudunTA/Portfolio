@@ -103,6 +103,14 @@
   margin-left: 22px;
 }
 .portfolio-description {
+  margin-block-end: 0em;
+  margin-left: 8px;
+  color: var(--slight-gray);
+}
+.portfolio-description-two {
+  margin-block-start: 0.3em;
+  height: 20px;
+  margin-block-end: 0em;
   margin-left: 8px;
   color: var(--slight-gray);
 }
@@ -116,11 +124,16 @@
 .flex-portfolio {
   display: flex;
 }
+.flex-portfolio-height {
+  display: flex;
+  height: 25px;
+}
 .triangle-icon {
   color: var(--slate);
   margin-right: 0px;
 }
 .portfolio-tags {
+  margin-block-start: 0.3em;
   margin-left: 8px;
   color: var(--slate);
 }
