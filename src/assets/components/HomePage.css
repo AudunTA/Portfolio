@@ -20,33 +20,29 @@
 }
 .hello {
   font-size: 15px;
-  line-height: 18px;
   font-weight: 400;
-  margin: 0px 0 0px;
+  margin: 0px 0 5px;
   color: var(--slate);
 }
 .name {
   height: 40px;
   font-size: 32px;
-
   font-weight: 700;
   margin: 0px 0px 0px;
   color: var(--almost-white);
 }
 .front-end {
   font-size: 51px;
-  line-height: 62px;
   font-weight: 700;
   margin: 0px 0 10px;
   color: var(--slate);
 }
 .short-description {
   font-size: 15px;
-  line-height: 18px;
   font-weight: 400;
   margin: 0px 0 10px;
   max-width: 400px;
-  color: var(--almost-white);
+  color: var(--slight-gray);
 }
 
 .homepage-middle-section {

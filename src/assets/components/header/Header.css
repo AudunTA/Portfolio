@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-
+  box-shadow: 0 10px 30px -10px var(--shadow);
   height: 50px;
   backdrop-filter: blur(20px);
 
@@ -15,7 +15,7 @@
   position: relative;
 
   transition: 0.3s;
-  margin: 0 20px;
+  margin: 0 50px;
 }
 .header-nav {
   display: flex;
@@ -96,8 +96,6 @@
   color: var(--almost-white);
   font-size: 15px;
   padding: 10px;
-  border: 1px solid var(--slate);
-  background-color: var(--slight-slate);
 }
 @media only screen and (max-width: 700px) {
   .flex-header {

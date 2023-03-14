@@ -64,22 +64,22 @@ function App() {
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
       images: [
         {
-          src: "",
+          src: "src/assets/images/FrontFace.png",
         },
       ],
-      live_link: "https://unrivaled-mooncake-14dedc.netlify.app",
-      gitHub: "https://github.com/AudunTA/SemesterAssignment_Auctionhouse",
+      live_link: "#",
+      gitHub: "https://github.com/AudunTA/FrontFace",
     },
     {
       title: "PlantSpire",
       date: "May - June 2022",
       description:
-        "This was my semester 2 project at Noroff. The focus of this project was JavaScript, including listing, filter, search and posting using an API. For the API i used wordpress as a headless CMS",
+        "This was my semester 2 project at Noroff. The focus of this project was JavaScript, including listing, filter, search and posting using an API. For the API i used wordpress as a headless CMS. The API no longer work as its not hosted anymore.",
       achivements: "Graded B",
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
       images: [
         {
-          src: "",
+          src: "src/assets/images/plantSpire.png",
         },
       ],
       live_link: "https://unrivaled-mooncake-14dedc.netlify.app",

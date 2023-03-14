@@ -77,7 +77,7 @@ function Contact() {
               >
                 LinkedIn
               </a>{" "}
-              if you got any questions :)
+              or send a mail to aud-and2@online.no if you got any questions :)
             </p>
           </div>
         </div>

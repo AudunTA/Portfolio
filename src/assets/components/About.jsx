@@ -10,7 +10,11 @@ import {
   faPython,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
-
+import {
+  faLayerGroup,
+  faGraduationCap,
+  faInfo,
+} from "@fortawesome/free-solid-svg-icons";
 function About() {
   return (
     <div className="container-About">
@@ -35,7 +39,11 @@ function About() {
               >
                 <div className="information-header">
                   <div className="btn_content-about">
-                    <p>01. information</p>
+                    <FontAwesomeIcon
+                      className="icon-about"
+                      icon={faLayerGroup}
+                    />
+                    <p>information</p>
                   </div>
                 </div>
                 <div className="flex-education">
@@ -65,6 +73,7 @@ function About() {
             >
               <div className="about-header">
                 <div className="btn_content-about">
+                  <FontAwesomeIcon className="icon-about" icon={faLayerGroup} />
                   <p>skills</p>
                 </div>
               </div>
@@ -128,7 +137,11 @@ function About() {
               <div className="container-education">
                 <div className="education-header">
                   <div className="btn_content-about">
-                    <p>03. education</p>
+                    <FontAwesomeIcon
+                      className="icon-about"
+                      icon={faGraduationCap}
+                    />
+                    <p>education</p>
                   </div>
                 </div>
                 <div className="flex-education">
