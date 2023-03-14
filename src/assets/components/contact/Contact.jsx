@@ -1,58 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+
 function Contact() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [bodyText, setBodyText] = useState("");
-
-  const [errorFirstName, setErrorFirstName] = useState(false);
-  const [errorLastName, setErrorLastName] = useState(false);
-  const [errorEmail, setErrorEmail] = useState(false);
-  const [errorBodyText, setErrorBodyText] = useState(false);
-  const onFirstNameChange = (event) => {
-    setFirstName(event.target.value);
-  };
-
-  const onLastNameChange = (event) => {
-    setLastName(event.target.value);
-  };
-  const onEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-  const onBodyChange = (event) => {
-    setBodyText(event.target.value);
-  };
-
-  const submitForm = (event) => {
-    event.preventDefault();
-    console.log("submitted!");
-    console.log(email);
-    console.log(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email));
-    if (firstName.length < 3) {
-      setErrorFirstName(true);
-    } else {
-      setErrorFirstName(false);
-    }
-    if (lastName.length < 3) {
-      setErrorLastName(true);
-    } else {
-      setErrorLastName(false);
-    }
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      setErrorEmail(false);
-    } else {
-      setErrorEmail(true);
-    }
-    if (bodyText.length < 3) {
-      setErrorBodyText(true);
-    } else {
-      setErrorBodyText(false);
-    }
-  };
   return (
     <div className="wrapper-contact">
       {" "}
