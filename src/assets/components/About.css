@@ -149,7 +149,7 @@
   margin-left: auto;
   margin-right: 0;
 }
-.margin-wrapper {
+.margin-wrapper-about {
   margin: 8px;
 }
 .education-header {
@@ -219,6 +219,11 @@
   margin-block-start: 0.3em;
   color: var(--slate);
   margin-right: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .margin-wrapper-about {
+    margin: 20px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .top-bar h2 {

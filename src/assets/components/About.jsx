@@ -13,14 +13,14 @@ import {
 import {
   faLayerGroup,
   faGraduationCap,
-  faInfo,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 function About() {
   return (
     <div className="container-About">
       <div className="wrapper-container">
         <div className="container-portfolio-work">
-          <div className="margin-wrapper">
+          <div className="margin-wrapper-about">
             <div
               className="top-bar"
               data-aos="fade-right"
@@ -39,10 +39,7 @@ function About() {
               >
                 <div className="information-header">
                   <div className="btn_content-about">
-                    <FontAwesomeIcon
-                      className="icon-about"
-                      icon={faLayerGroup}
-                    />
+                    <FontAwesomeIcon className="icon-about" icon={faUser} />
                     <p>information</p>
                   </div>
                 </div>
