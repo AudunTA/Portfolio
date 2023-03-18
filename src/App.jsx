@@ -18,7 +18,7 @@ function App() {
       tags: ["React", "JavaScript"],
       images: [
         {
-          src: "src/assets/images/reactoTech.png",
+          src: "images/reactoTech.png",
           alt: "homepage: mobile",
         },
       ],
@@ -33,7 +33,7 @@ function App() {
       tags: ["HTML", "CSS", "JavaScript"],
       images: [
         {
-          src: "src/assets/images/Adventure-Trails-Hike.png",
+          src: "images/Adventure-Trails-Hike.png",
           alt: "homepage: lightmode",
         },
       ],
@@ -49,8 +49,8 @@ function App() {
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
       images: [
         {
-          src: "src/assets/images/auctionHouse.png",
-          alt: "homepage: lightmode",
+          src: "images/auctionHouse.png",
+          alt: "auction house displayed picture",
         },
       ],
       live_link: "https://audunta.github.io/SemesterAssignment_Auctionhouse/",
@@ -64,7 +64,7 @@ function App() {
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
       images: [
         {
-          src: "src/assets/images/FrontFace.png",
+          src: "images/FrontFace.png",
         },
       ],
       live_link: "#",
@@ -79,7 +79,7 @@ function App() {
       tags: ["HTML", "BootStrap", "SASS", "JavaScript"],
       images: [
         {
-          src: "src/assets/images/plantSpire.png",
+          src: "images/plantSpire.png",
         },
       ],
       live_link: "https://unrivaled-mooncake-14dedc.netlify.app",
